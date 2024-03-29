@@ -22,7 +22,7 @@ h2 {
 header {
     padding: 2.5em 0;
     position: fixed;
-    top: 25px;
+    top: 0px;
     left: 0;
     width: 1200px;
     margin: 0 12em;
@@ -66,6 +66,7 @@ ul {
 .dropdown-menu {
     position: absolute;
     background-color: #ffffffd1;
+    border-radius: 0 0 1.6em 0;
 
 }
 
@@ -110,9 +111,9 @@ nav ul li a {
 
 
 .cta_contato:hover {
-    background-color: transparent;
+    background-color: #000b4f;
     border: 2px solid #000b4f;
-    
+    color: #fff;
 }
 
 /* MAIN CONTENT*/
@@ -140,7 +141,24 @@ h1 {
     font-size: 4.2rem;
     color: #20368F;
     list-style: none;
+    background: linear-gradient(45deg, #000b4f, #20368F, #829CD0, #b1c5ef, #000b5f);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
 
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 400%;
+    }
+    
 }
 
 .p_main {
@@ -168,8 +186,8 @@ h1 {
 }
 
 .btn_1:hover {
-    color: #000b4f;
-    background-color: transparent;
+    color: #fff;
+    background-color: #000b4f;
     border: 2px solid #000b4f;
     font-weight: 500;
 }
@@ -187,6 +205,13 @@ h1 {
     opacity: 1;
     font-weight: 600;
 }
+
+
+.right_side img {
+    border-radius: 2.4em 0 2.4em 0;
+    box-shadow: -25px 25px 50px rgba(0, 11, 79, 0.1);
+}
+
 
 /* DESTAQUES*/
 
@@ -469,75 +494,54 @@ h2 {
     color: #000b4f;
 }
 
+/* pre-footer */
+
+.contatos {
+    display: flex;
+    background-color: #829CD0;
+    justify-content: center;
+}
+
+.contatos div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.contatos span {
+    color: #000b4f;
+}
+
+.contatos a {
+    color: #000b4f;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+
 /* FOOTER */
 
 footer {
-    padding: 7.2em 12em;
-    background-color: #b2b2b2;
-    display: flex;
-    gap: 32px;
-    
-}
-
-.footer_logo {
-    width: 150px;
-    background-color: #000b4f;
+    padding: 4.8em 12em;
+    background-color: #829cd013;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom-right-radius: 1em;
+    justify-content: space-between;
     
 }
 
-.footer_logo a {
-    padding: 1.2em 2.4em;
-    font-size: 1.6rem;
+.links_site ul{
+    display: flex;
+    gap: 3.2em;
+}
+
+.links_site a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.footer_main {
-    
-}
-
-.footer_menu a {
     color: #000b4f;
-    opacity: 0.7;
-    padding-right: 2.4em;
     font-size: 1.4rem;
-    text-decoration: none;
     
 }
 
-.contatos{
-    display: flex;
-    padding: 1.2em 1.2em;
-    justify-content: center;
-    background-color: #829CD0;
-    
-}
-
-
-div ul li {
-    padding-left: 2.4em;
-    justify-content: center;
-    align-items: center;
-}
-
-div ul li img  {
-    width: 20px;
-    padding-right: 0.7em;
-   
-    
-    
-}
-
-div ul li a {
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: #fff;
-    font-weight: 200;
-    
-  
-}
