@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
+    box-sizing: border-box;
     
 }
 
@@ -14,17 +15,26 @@ h2 {
     
 }
 
+
+
 /* HEADER */
 
 header {
-    margin: 50px 120px;
+    padding: 2.5em 0;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 1200px;
+    margin: 0 12em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff5a;
+   
 }
 
 .logo_container  {
-    width: 188px;
+    width: 108px;
     text-wrap: wrap;
     display: flex;
 }
@@ -33,7 +43,9 @@ header {
     text-decoration: none;
     color: #fff;
     font-family: "Montserrat";
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     background-color: #000b4f;
     padding: 1.2em 2.4em;
     text-align: center;
@@ -51,9 +63,19 @@ ul {
     display: flex;
 }
 
-.dropdown {
+.dropdown-menu {
+    position: absolute;
+    background-color: #ffffffd1;
+
+}
+
+.dropdown-menu a{
     display: block;
     display: none;
+}
+
+.dropdown:hover .dropdown-menu a{
+    display: block;
 }
 
 
@@ -96,7 +118,8 @@ nav ul li a {
 /* MAIN CONTENT*/
 
 main {
-    margin: 0 120px;
+    margin: 120px 120px;
+   
     display: flex;
     gap: 9.6em;
     padding-top: 9.6em;
@@ -167,6 +190,11 @@ h1 {
 
 /* DESTAQUES*/
 
+.secoes a:hover{
+    opacity: 1;
+    font-weight: 600;
+}
+
 h2 {
     font-size: 2.4rem;
     font-family: ;
@@ -177,7 +205,7 @@ h2 {
     /*margin: 120px 120px;*/
     margin-top: 120px;
     margin-bottom: 120px;
-    padding: 6em 12em;
+    padding: 3em 12em;
     background-color: #829cd013;
     opacity: ;
     
@@ -207,6 +235,7 @@ h2 {
 
 .card_1 img {
     width: 285px;
+    border-top-left-radius: 3.2em;
     
 }
 
@@ -333,6 +362,7 @@ h2 {
 
 .card_4 img {
     width: 285px;
+    border-bottom-right-radius: 3.2em;
     
 }
 .card_4 img:hover {
@@ -401,11 +431,18 @@ h2 {
     font-family: ;
     font-size: 1.6rem;
     font-weight: 400;
+    color: #000b4f;
+    opacity: 0.7;
     display: flex;
     max-width: auto;
     align-items: center;
     justify-content: center;
     
+}
+
+.blog_rightside a:hover {
+    opacity: 1;
+    font-weight: 600;
 }
 
 /* PRINCIPAIS CLIENTES */
@@ -439,14 +476,16 @@ footer {
     background-color: #b2b2b2;
     display: flex;
     gap: 32px;
+    
 }
 
 .footer_logo {
     width: 150px;
-    background-color: #323232;
+    background-color: #000b4f;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom-right-radius: 1em;
     
 }
 
@@ -458,10 +497,47 @@ footer {
     font-weight: bold;
 }
 
+.footer_main {
+    
+}
 
 .footer_menu a {
+    color: #000b4f;
+    opacity: 0.7;
+    padding-right: 2.4em;
     font-size: 1.4rem;
     text-decoration: none;
     
 }
 
+.contatos{
+    display: flex;
+    padding: 1.2em 1.2em;
+    justify-content: center;
+    background-color: #829CD0;
+    
+}
+
+
+div ul li {
+    padding-left: 2.4em;
+    justify-content: center;
+    align-items: center;
+}
+
+div ul li img  {
+    width: 20px;
+    padding-right: 0.7em;
+   
+    
+    
+}
+
+div ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 200;
+    
+  
+}
