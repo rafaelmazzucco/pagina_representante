@@ -54,10 +54,6 @@ header {
     
 }
 
-
-
-
-
 ul {
     list-style: none;
     display: flex;
@@ -78,8 +74,6 @@ ul {
 .dropdown:hover .dropdown-menu a{
     display: block;
 }
-
-
 
 nav ul li a {
     text-decoration: none;
@@ -102,8 +96,6 @@ nav ul li a {
 .cta_contato  {
     color: #fff;
     background-color: #829CD0;
-    
-    border: 2px solid #829CD0;
     border-radius: 0.8em;
     opacity: 1;
 }
@@ -112,7 +104,6 @@ nav ul li a {
 
 .cta_contato:hover {
     background-color: #000b4f;
-    border: 2px solid #000b4f;
     color: #fff;
 }
 
@@ -120,7 +111,6 @@ nav ul li a {
 
 main {
     margin: 120px 120px;
-   
     display: flex;
     gap: 9.6em;
     padding-top: 9.6em;
@@ -164,14 +154,13 @@ h1 {
 .p_main {
     font-size: 1.6rem;
     max-width: 600px;
+    font-weight: 200;
     padding-top: 1.2em;
     padding-bottom: 4.8em;
     line-height: 140%;
-    letter-spacing: 5%;
+    letter-spacing: 10%;
     color: #323232;
 }
-
-
 
 .btn_1 {
     color: #fff;
@@ -181,14 +170,12 @@ h1 {
     padding: 1.2em 2.4em;
     background-color: #829CD0;
     border-radius: 0.8em;
-    border: 2px solid #829CD0;
-     
+    
 }
 
 .btn_1:hover {
     color: #fff;
     background-color: #000b4f;
-    border: 2px solid #000b4f;
     font-weight: 500;
 }
 
@@ -261,12 +248,10 @@ h2 {
 .card_1 img {
     width: 285px;
     border-top-left-radius: 3.2em;
-    
 }
 
 .card_1 img:hover {
-    
-        webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
         transform: scale(1.02);
 }
 
@@ -281,7 +266,7 @@ h2 {
 .card_1 p {
     font-size: 1.6rem;
     font-family: ;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     max-width: 285px;
     padding-bottom: 1.2em;
@@ -323,7 +308,7 @@ h2 {
 .card_2 p {
     font-size: 1.6rem;
     font-family: ;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     max-width: 285px;
     padding-bottom: 1.2em;
@@ -365,7 +350,7 @@ h2 {
 .card_3 p {
     font-size: 1.6rem;
     font-family: ;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     max-width: 285px;
     padding-bottom: 1.2em;
@@ -407,7 +392,7 @@ h2 {
 .card_4 p {
     font-size: 1.6rem;
     font-family: ;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
     max-width: 285px;
     padding-bottom: 1.2em;
@@ -445,7 +430,7 @@ h2 {
 }
 
 .blog_rightside p {
-    font-family: ;
+    font-weight: 200;
     font-size: 1.6rem;
     line-height: 140%;
     padding-bottom: 4.2em
