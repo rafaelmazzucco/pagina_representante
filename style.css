@@ -441,6 +441,7 @@ h2 {
 
 .blog_leftside img {
     width: 590px;
+    border-radius: 0 2.4em 0 2.4em;
 }
 
 .blog_rightside p {
